@@ -1,0 +1,31 @@
+const a = document.querySelector('#basket-heading');
+a.style.color = 'brown';
+const b = document.querySelectorAll(".fruit")
+const mainHeading = document.querySelector('#main-heading');
+mainHeading.style.textAlign = 'end';
+
+const fruits = document.querySelector('.fruits');
+fruits.style.backgroundColor = 'gray';
+fruits.style.padding = '30px';
+fruits.style.margin = '30px'
+fruits.style.width = '50%';
+fruits.style.borderRadius = '5px';
+fruits.style.listStyleType = 'none';
+
+const basketHeading = document.querySelector('h2');
+basketHeading.style.marginLeft = '30px';
+
+const item = document.querySelectorAll('.fruit');
+
+for (let i = 0; i < item.length; i++) {
+    item[i].style.backgroundColor = 'white';
+    item[i].style.padding = '10px';
+    item[i].style.margin = '10px';
+    item[i].style.borderRadius = '5px';
+}
+const Odd = document.querySelectorAll('.fruit:nth-child(even)');
+for (let i = 0; i < Odd.length; i++) {
+    Odd[i].style.backgroundColor = 'brown';
+    Odd[i].style.color = 'white';
+
+}
